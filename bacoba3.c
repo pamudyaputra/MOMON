@@ -8,7 +8,7 @@
 #include <time.h>
 
 /* MAIN MENU */
-//void playGame();
+void playGame();
 void scoreHistory();
 void highScore();
 void help();
@@ -80,7 +80,7 @@ void help() {
 	system("mode 130, 90");
 	FILE *fhelp;
 	fhelp = fopen("Help.txt", "r");
-	int help = getc(fhelp);
+	char help = getc(fhelp);
 	while (help != EOF){
 		putchar(help);
 		help = getc(fhelp);
